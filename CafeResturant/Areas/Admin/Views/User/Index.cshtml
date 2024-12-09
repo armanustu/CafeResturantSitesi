@@ -1,0 +1,70 @@
+﻿@model IEnumerable<ApplicationUser>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <p>           
+        <a asp-area="Admin" asp-controller="User" asp-action="Index" class="btn btn-primary form-control"><i class="bi bi-card-checklist"></i>Kullanıcı Listesi</a>
+        </p>
+        </div>
+        <div class="col-md-6">
+            <p>
+            <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-primary form-control"><i class="bi bi-plus-circle-fill"></i>Kullanıcı Ekle</a>
+            </p>
+        </div>
+    </div>
+    <table class="table table-strip table-bordered" id="DataTable">
+        <thead>
+            <tr>
+                <th>
+                   Name
+                </th>
+                <th>
+                   Surname
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>işlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+                    <tr>
+                        <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                        </td>
+                        <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+
+                            <a asp-action="Delete" asp-route-id="@item.Id.ToString()" class="btn btn-danger"><i class="bi bi-trash-fill"></i>Sil</a>
+                        </td>
+                    </tr>
+        }
+        </tbody>
+    </table>
+
+@section Scripts{
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#DataTable').DataTable(
+                    {
+                        "language": {
+                            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+
+                        }
+                    });
+            });
+        </script>
+}
+

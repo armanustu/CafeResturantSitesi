@@ -1,0 +1,78 @@
+﻿@model CafeResturant.Models.Menu
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <h4>Menü Ekleme</h4>
+        <form asp-action="Create" enctype="multipart/form-data">
+           
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>          
+            <div class="form-group">
+                @Html.Label("Resim seçiniz")
+                <input asp-for="Image" class="form-control" type="file" />
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>          
+            <div class="form-group">
+                @Html.Label("Açıklama giriniz")
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @Html.Label("Başlık giriniz")
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                @Html.Label("Menu seçiniz")
+                @Html.DropDownListFor(x => x.MenuID, (IEnumerable<SelectListItem>)ViewBag.Menu, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.MenuID)
+                <br />
+            </div>*@
+            <div class="form-group">
+                @Html.Label("Kategori seçiniz")
+                @Html.DropDownListFor(x => x.CategoryID, (IEnumerable<SelectListItem>)ViewBag.Category, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.CategoryID)
+                <br />
+            </div>
+
+            <div class="form-group">
+                @Html.Label("Açıklama Giriniz")
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @Html.Label("Fiyat giriniz")
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+               @* @Html.LabelFor(model => model.Ozel, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                @Html.Label("Özel mi")
+                <div class="col-md-10">
+                    <div class="checkbox">
+                        @Html.EditorFor(model => model.Ozel)
+                        @Html.ValidationMessageFor(model => model.Ozel, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-primary">Kayıt listesi</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

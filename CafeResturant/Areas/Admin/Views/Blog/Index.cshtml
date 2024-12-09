@@ -1,0 +1,84 @@
+﻿@model IEnumerable<CafeResturant.Models.Blog>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+    <a asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-circle-fill"></i>Yorum ekle</a>
+<table class="table table-bordered table-strip " id="DataTable">
+    <thead>
+        <tr>
+            <th>
+                Email
+            </th>
+            <th>
+                Resim
+            </th>
+            <th>
+                Onay
+            </th>
+            <th>
+                Mesaj
+            </th>
+
+            <th>işlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @if (item.Image == null)
+                    {
+                        <img src="~/site/images/no-photography-sign-image-vector-23665020.jpg" width="100" height="100" />
+                    }
+                    else
+                    {
+                        <img src="@item.Image" width="100" height="100" />
+                    }
+                </td>
+                <td>
+
+                    @if (item.Onay)
+                    {
+                        <button class="btn btn-success btn-sm"><i class="bi bi-check-circle"></i>Evet</button>
+                    }
+                    else
+                    {
+                        <button class="btn btn-danger btn-sm"><i class="bi bi-x-circle"></i>Hayır</button>
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Message)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.BlogID" class="btn btn-primary"><i class="bi bi-pencil-fill"></i>Güncelle</a>
+
+                    <a asp-action="Delete" asp-route-id="@item.BlogID" class="btn btn-danger"><i class="bi bi-trash-fill"></i>sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table
+
+@section Scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#DataTable').DataTable(
+                {
+                    "language": {
+                        "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+
+                    }
+                });
+        });
+    </script>
+}

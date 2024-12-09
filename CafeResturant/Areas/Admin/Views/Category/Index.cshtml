@@ -1,0 +1,61 @@
+﻿
+@model IEnumerable<CafeResturant.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="Container" >
+    <div class="col-md-6">
+        <p>
+            <h2 class="text-primary"><a asp-area="Admin" asp-controller="Category" asp-action="Index"><i class="bi bi-card-checklist"></i>Kategori listesi Listesi</a></h2>
+        </p>
+    </div>
+    <div class="col-md-6">
+        <p>
+            <a asp-area="Admin" asp-controller="Category" asp-action="Create" class="btn btn-primary form-control"><i class="bi bi-plus-circle-fill"></i>Kategori Ekle</a>
+        </p>
+    </div>
+</div>
+    <table class="table table-strip table-bordered" id="DataTable">
+        <thead>
+            <tr>
+                <th>
+                    Kategori Adı
+                </th>
+                <th>işlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CategoryName)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.CategoryID" class="btn btn-success"><i class="bi bi-pencil-fill"></i>Düzenle</a> 
+                      @*  <a asp-action="Details" asp-route-id="@item.CategoryID" class="btn btn-warning">Details</a> |*@
+                        <a asp-action="Delete" asp-route-id="@item.CategoryID" class="btn btn-danger"><i class="bi bi-trash-fill"></i>Sil</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#DataTable').DataTable(
+                {
+                    "language": {
+                        "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+
+                    }
+                });
+        });
+    </script>
+}

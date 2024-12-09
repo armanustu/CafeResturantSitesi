@@ -1,0 +1,413 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CafeResturant.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CafeResturant.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\fonts\\ionicons-2.0.1\\builder\\build_data.json",
+      "PackagePath": "staticwebassets\\site\\fonts\\ionicons-2.0.1\\builder\\build_data.json"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\fonts\\ionicons-2.0.1\\builder\\manifest.json",
+      "PackagePath": "staticwebassets\\site\\fonts\\ionicons-2.0.1\\builder\\manifest.json"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\fonts\\themify\\Themify IconFonts 5-23-2014.json",
+      "PackagePath": "staticwebassets\\site\\fonts\\themify\\Themify IconFonts 5-23-2014.json"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\images\\coffee-restaurant-logo-design-concept_96807-1464.png",
+      "PackagePath": "staticwebassets\\site\\images\\coffee-restaurant-logo-design-concept_96807-1464.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\images\\no-photography-sign-image-vector-23665020.jpg",
+      "PackagePath": "staticwebassets\\site\\images\\no-photography-sign-image-vector-23665020.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\includes\\config.json",
+      "PackagePath": "staticwebassets\\site\\includes\\config.json"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\08b44785-56d3-4f8c-9e57-6c205246b356.jfif",
+      "PackagePath": "staticwebassets\\site\\menu\\08b44785-56d3-4f8c-9e57-6c205246b356.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\09e53706-db36-4a3f-862f-ef693c281c77.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\09e53706-db36-4a3f-862f-ef693c281c77.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\0cda1af7-3dd8-4ec6-b039-2201d439dea8.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\0cda1af7-3dd8-4ec6-b039-2201d439dea8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\1475339e-9eb7-43db-896a-ad540289cb93.jfif",
+      "PackagePath": "staticwebassets\\site\\menu\\1475339e-9eb7-43db-896a-ad540289cb93.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\1975ac82-9dbb-4f3f-9716-1465fd19f69b.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\1975ac82-9dbb-4f3f-9716-1465fd19f69b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\27e4c904-1d42-42f5-8879-83f2e254e368.jfif",
+      "PackagePath": "staticwebassets\\site\\menu\\27e4c904-1d42-42f5-8879-83f2e254e368.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\2f84b458-a402-4326-9604-7e3004d39639.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\2f84b458-a402-4326-9604-7e3004d39639.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\30d1ed4f-97a7-4193-85bd-dac51d627430.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\30d1ed4f-97a7-4193-85bd-dac51d627430.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\3b40f938-9019-4606-ac47-2b783d0b4868.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\3b40f938-9019-4606-ac47-2b783d0b4868.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\45b8dc5b-6c60-4898-b6af-9e506f0fd5b3.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\45b8dc5b-6c60-4898-b6af-9e506f0fd5b3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\4d759499-c637-4dc4-8876-94bbb7e5f716.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\4d759499-c637-4dc4-8876-94bbb7e5f716.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\5311a6bd-533b-481e-8f51-fd4c1603fd34.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\5311a6bd-533b-481e-8f51-fd4c1603fd34.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\538f3a32-14a3-4194-a840-c7f7b4deaf5b.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\538f3a32-14a3-4194-a840-c7f7b4deaf5b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\58430a0f-10e2-47d4-87ec-9f6b2d12563e.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\58430a0f-10e2-47d4-87ec-9f6b2d12563e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\6614a453-0ab1-4cfe-abd6-48adf784387d.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\6614a453-0ab1-4cfe-abd6-48adf784387d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\81c801aa-8d80-4858-89d6-3b5ef523463d.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\81c801aa-8d80-4858-89d6-3b5ef523463d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\84cb573e-8ec6-4a2d-8aff-9679877c7c86.jfif",
+      "PackagePath": "staticwebassets\\site\\menu\\84cb573e-8ec6-4a2d-8aff-9679877c7c86.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\9926c54b-156b-4fff-a105-a29b735bcb31.jfif",
+      "PackagePath": "staticwebassets\\site\\menu\\9926c54b-156b-4fff-a105-a29b735bcb31.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\a080f44f-5ed5-4e01-9e43-68afe2b10e19.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\a080f44f-5ed5-4e01-9e43-68afe2b10e19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\bf980e05-369d-43b3-923c-e3aeac44cf25.jfif",
+      "PackagePath": "staticwebassets\\site\\menu\\bf980e05-369d-43b3-923c-e3aeac44cf25.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\bfe48b9c-8248-4f4a-9422-4761a23c98df.jfif",
+      "PackagePath": "staticwebassets\\site\\menu\\bfe48b9c-8248-4f4a-9422-4761a23c98df.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\c565de14-a268-4a85-a916-563218ab63b6.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\c565de14-a268-4a85-a916-563218ab63b6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\d0d66601-6879-49d3-b27c-acc752ed626f.jfif",
+      "PackagePath": "staticwebassets\\site\\menu\\d0d66601-6879-49d3-b27c-acc752ed626f.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\d228868f-7e67-4fed-83a7-d8cdf1de8e08.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\d228868f-7e67-4fed-83a7-d8cdf1de8e08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\e4e9c35a-f75f-4dfa-8b35-6d686d6eb05e.jfif",
+      "PackagePath": "staticwebassets\\site\\menu\\e4e9c35a-f75f-4dfa-8b35-6d686d6eb05e.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\e6aa4209-781c-4642-9125-a0449057163c.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\e6aa4209-781c-4642-9125-a0449057163c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\e9ae6a2e-e483-46b1-a4ba-45edb457eb36.jfif",
+      "PackagePath": "staticwebassets\\site\\menu\\e9ae6a2e-e483-46b1-a4ba-45edb457eb36.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\f01008f3-add4-4c1f-a5ca-a4e07116295f.jfif",
+      "PackagePath": "staticwebassets\\site\\menu\\f01008f3-add4-4c1f-a5ca-a4e07116295f.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\f6ff1400-5afc-4180-8d41-727ce18916f1.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\f6ff1400-5afc-4180-8d41-727ce18916f1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\f7ba721a-9870-4394-aadf-34ed180c3504.jpg",
+      "PackagePath": "staticwebassets\\site\\menu\\f7ba721a-9870-4394-aadf-34ed180c3504.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\source\\repos\\CafeResturant\\CafeResturant\\wwwroot\\site\\menu\\fd3ac0fe-14d1-4fd6-882e-e4cdca5281fa.jfif",
+      "PackagePath": "staticwebassets\\site\\menu\\fd3ac0fe-14d1-4fd6-882e-e4cdca5281fa.jfif"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.CafeResturant.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.CafeResturant.props",
+      "PackagePath": "build\\CafeResturant.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.CafeResturant.props",
+      "PackagePath": "buildMultiTargeting\\CafeResturant.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.CafeResturant.props",
+      "PackagePath": "buildTransitive\\CafeResturant.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

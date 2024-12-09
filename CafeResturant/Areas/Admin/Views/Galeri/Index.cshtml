@@ -1,0 +1,41 @@
+﻿@model IEnumerable<CafeResturant.Models.Galeri>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<p>
+    <a asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-circle-fill"></i>Galeri Ekle</a>
+</p>
+<table class="table table-bordered table-strip">
+    <thead>
+        <tr>
+            <th>
+                Resim
+            </th>
+            <th>işlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+            <tr>
+                <td>
+                    @if (item.Image == null)
+                    {
+                        <img src="~/site/images/no-photography-sign-image-vector-23665020.jpg"  width="200" height="200"/>
+                    }
+                    else
+                    {
+                    <img src="@item.Image" width="200" height="200">                        
+                    }                  
+                </td>
+                
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.GaleriID"  class="btn btn-primary"><i class="bi bi-pencil-fill"></i>Güncelle</a> 
+               
+                <a asp-action="Delete" asp-route-id="@item.GaleriID" class="btn btn-danger"><i class="bi bi-trash-fill"></i>sil</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

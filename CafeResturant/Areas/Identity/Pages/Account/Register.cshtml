@@ -1,0 +1,79 @@
+﻿@page
+@using CafeResturant.Models;
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+@*
+<h1>Register.cshtml.cs içine isim soyisim rol propertyleri ekledik</h1>*@
+
+@*@if(User.Identity.IsAuthenticated)Buraya istersek if koşulu koyarak otantike olmayan kullancıya sayfa açılmaz bomboş sayfa çıkar çünkü otantike değil*@
+    <div class="row">
+        <div class="col-md-4">
+            <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                <h2>KAYIT FORMU.</h2>
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                <div class="form-floating mb-3">
+                    İsim
+                    <input asp-for="Input.Name" class="form-control" aria-required="true" placeholder="isim" />
+
+                    <span asp-validation-for="Input.Name" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    Soyisim
+                    <input asp-for="Input.Surname" class="form-control" aria-required="true" placeholder="soyisim" />
+
+                    <span asp-validation-for="Input.Surname" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    Email
+                    <input asp-for="Input.Email" class="form-control" aria-required="true" placeholder="Email" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    Telefon
+                    <input asp-for="Input.Telefon" class="form-control" aria-required="true" placeholder="Telefon" />
+
+                    <span asp-validation-for="Input.Telefon" class="text-danger"></span>
+                </div>
+                 <div class="form-floating mb-3">
+                    Sehir
+                    <input asp-for="Input.Sehir" class="form-control" aria-required="true" placeholder="Şehir giriniz" />
+
+                    <span asp-validation-for="Input.Sehir" class="text-danger"></span>
+                </div>
+
+
+
+                <div class="form-floating mb-3">
+                    Şifre
+                    <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Şifre" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    Şifre doğrula
+                    <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                </div>
+@*            bu sayfaya kullanıcı("Admin") giriş yaparken User sayfasında bulunan auhorize kısmından alınan değerin Role_admine eşitse rol değerleri gelir.yani busayfaya giriş yapılırken adminle mi yapılmış kontrol edilir
+*@                User
+                @if (User.IsInRole(diger.Role_admin))
+                {
+                    <div class="form-group">
+                        @Html.DropDownListFor(m=>m.Input.Role,Model.Input.Roller,"Role Seç",new {@class="form-control"})
+
+                    </div>
+                }
+                <button id="registerSubmit" type="submit" class="btn-success form-control">Üye ol</button>
+            </form>
+        </div>
+      
+    </div>
+
+
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

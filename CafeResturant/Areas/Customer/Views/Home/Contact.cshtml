@@ -1,0 +1,93 @@
+﻿@model CafeResturant.Models.Contact
+@{
+    ViewData["Title"] = "Contact";
+    Layout = "~/Views/Shared/ALayout.cshtml";
+}
+
+<!-- Title Page -->
+<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url('site/images/bg-title-page-02.jpg');">
+	<h2 class="tit6 t-center">
+		İletişim
+	</h2>
+</section>
+
+
+
+<!-- Contact form -->
+<section class="section-contact bg1-pattern p-t-90 p-b-113">
+	<!-- Map -->
+	<div class="container">
+		<div class="map bo8 bo-rad-10 of-hidden">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12033.391196239103!2d28.952159490039453!3d41.06138960766885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab73b5eba0301%3A0x7da6aa7824ba6169!2sPerpa%20Ticaret%20Merkezi!5e0!3m2!1str!2ssk!4v1725361156938!5m2!1str!2ssk" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			
+		</div>
+	</div>
+
+	<div class="container">
+		<h3 class="tit7 t-center p-b-62 p-t-105">
+		Bize mesaj bırakabilirsiniz
+		</h3>
+
+		<form class="wrap-form-reservation size22 m-l-r-auto" asp-action="Contact">
+			<div asp-validation-summary="ModelOnly" class="text-danger"/>
+			<div class="row">
+				<div class="col-md-4">
+					<!-- Name -->
+					<span class="txt9">
+						Ad
+					</span>
+
+					<div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
+						<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" asp-for="Name" placeholder="Adınız">
+						 <span asp-validation-for="Name" class="text-danger"/>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<!-- Email -->
+					<span class="txt9">
+						Email
+					</span>
+
+					<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
+						<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" asp-for="Email" placeholder="Email">
+						<span asp-validation-for="Email" class="text-danger" />
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<!-- Phone -->
+					<span class="txt9">
+						Telefon
+					</span>
+
+					<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
+						<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" asp-for="Telefon" placeholder="Phone">
+						<span asp-validation-for="Telefon" class="text-danger"/>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<!-- Message -->
+					<span class="txt9">
+						Message
+					</span>
+					<textarea class="bo-rad-10 size35 bo2 txt10 p-l-20 p-t-15 m-b-10 m-t-3" asp-for="Mesaj" placeholder="Messajınız"></textarea>
+					<span asp-validation-for="Mesaj" class="text-danger"/>
+				</div>
+			</div>
+
+			<div class="wrap-btn-booking flex-c-m m-t-13">
+				<!-- Button3 -->
+				<button type="submit" class="btn3 flex-c-m size36 txt11 trans-0-4">
+					Gönder
+				</button>
+			</div>
+		</form>
+		
+	</div>
+</section>
+@section Scripts{
+	@{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

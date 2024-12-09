@@ -1,0 +1,483 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="~/site/images/icons/favicon.png" />
+	
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/site/vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/site/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/site/fonts/themify/themify-icons.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/site/vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/site/vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/site/vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/site/vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/site/vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/site/vendor/slick/slick.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/site/vendor/lightbox2/css/lightbox.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/site/css/util.css">
+	<link rel="stylesheet" type="text/css" href="~/site/css/main.css">
+	<!--===============================================================================================-->
+</head>
+<body class="animsition">
+
+	<!-- Header -->
+	<header>
+		<!-- Header desktop -->
+		<div class="wrap-menu-header gradient1 trans-0-4">
+			<div class="container h-full">
+				<div class="wrap_header trans-0-3">
+					<!-- Logo -->
+					<div class="logo">
+                        <a href="index.html">
+                            <img src="~/site/images/coffee-restaurant-logo-design-concept_96807-1464.png" />
+					
+					@*		<img src="~/site/images/icons/logo.png" alt="IMG-LOGO" data-logofixed="~/site/images/icons/logo2.png">*@
+						</a>
+					</div>
+
+					<!-- Menu -->
+					<div class="wrap_menu p-l-45 p-l-0-xl">
+						<nav class="menu">
+							<ul class="main_menu">
+								@if (User.Identity.IsAuthenticated)// burası hangi kullanıcı girerse girerse girsin Alayout açılacak oyüzden yoruma çektik çünkü rolleme işlemine göre sayfayı açmaya çalışıyoruz Aslında burasıUser.IsInRole(diger.Role_sekreter) yazsakdık daha iyi olurdu öğrenmek amacıylayazdık
+								{
+									
+
+									<li>
+										<a asp-area="Customer" asp-controller="Home" asp-action="Menu"  >Menu</a>
+									</li>
+
+									<li>
+										<a asp-area="Customer" asp-controller="Home" asp-action="Rezervasyon" >Rezervasyon</a>
+									</li>
+
+									
+									<li class="t-center">
+										<a asp-area="Admin" asp-controller="Menus" asp-action="Index" target="_blank">ADMİN PANELİ</a>
+									</li>
+									<li>
+										<form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+											<button type="submit" class="nav-link btn btn-link text-white">Çıkış</button>
+										</form>
+									</li>
+
+
+
+								}
+								else
+								{
+									@*
+									<li>
+										<a asp-area="Customer" asp-controller="Home" asp-action="Index">Anasayfa</a>
+									</li>
+
+									<li>
+										<a asp-area="Customer" asp-controller="Home" asp-action="Menu">Menu</a>
+									</li>
+
+									<li>
+										<a asp-area="Customer" asp-controller="Home" asp-action="Rezervasyon">Rezervasyon</a>
+									</li>
+								*@
+									<li>
+										<a asp-area="Customer" asp-controller="Home" asp-action="Galery">Galleri</a>
+									</li>
+									<li>
+										<a asp-area="Customer" asp-controller="Home" asp-action="Index">Anasayfa</a>
+									</li>
+									<li>
+										<a asp-area="Customer" asp-controller="Home" asp-action="About">Hakkımızda</a>
+									</li>
+
+									<li>
+										<a asp-area="Customer" asp-controller="Home" asp-action="Blog">Blog</a>
+									</li>
+
+									<li>
+										<a asp-area="Customer" asp-controller="Home" asp-action="Contact">İletişim</a>
+									</li>
+								
+								
+								}
+								
+								
+							</ul>
+						</nav>
+					</div>
+
+					<!-- Social -->
+					<div class="social flex-w flex-l-m p-r-30">
+						<a href="https://www.linkedin.com/in/arman-%C3%BCst%C3%BC-8063b2140/" class="fs-15 c-white"><i class="fa fa-linkedin " aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/kodluyoruz/" class="fs-15 c-white"><i class="fa fa-instagram m-l-18" aria-hidden="true"></i></a>
+						<a href="https://www.facebook.com/arman.ustu" class="fs-15 c-white"><i class="fa fa-facebook m-l-18" aria-hidden="true"></i></a>
+						<a href="#" class="fs-15 c-white"><i class="fa fa-twitter m-l-18" aria-hidden="true"></i></a>
+
+						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Sidebar -->
+	<aside class="sidebar trans-0-4">
+		<!-- Button Hide sidebar -->
+		<button class="btn-hide-sidebar ti-close color0-hov trans-0-4"></button>
+
+		<!-- - -->
+		<ul class="menu-sidebar p-t-95 p-b-70">
+
+
+			<li class="t-center m-b-13">
+				<a asp-area="Customer" asp-controller="Home" asp-action="Menu" class="txt19">Menu</a>
+			</li>
+				<li class="t-center m-b-13">
+					<a asp-area="Customer" asp-controller="Home" asp-action="Galery" class="txt19">Galeri</a>
+				</li>
+			<li class="t-center m-b-13">
+				<a asp-area="Customer" asp-controller="Home" asp-action="About" class="txt19">Hakkımızda</a>
+			</li>
+			<li class="t-center m-b-13">
+				<a asp-area="Customer" asp-controller="Home" asp-action="Blog" class="txt19">Blog</a>
+			</li>
+			<li class="t-center m-b-33">
+				<a asp-area="Customer" asp-controller="Home" asp-action="Contact" class="txt19">İletişim</a>
+			</li>
+			<li class="t-center m-b-33">
+				<a asp-area="Customer" asp-controller="Home" asp-action="Rezervasyon" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">Rezervasyon</a>
+			</li>
+			</br>
+			@if (User.Identity.IsAuthenticated)// burası hangi kullanıcı girerse  giriş yaparsa yapsın ister admin hangi ister sekreter ister yazılımcı busayfa giriş yapıldığında admin paneli açılcaktır aksi halde açılmaz User.Identity.IsAuthenticated öğrenmek için yazdık burası normalde User.IsInRole(diger.Role_admin) mantığı yürütmemiz gerekirdi.IsInRole kullanım örneği var _Layouttta 
+			{
+				<li class="t-center m-b-13">
+					<a asp-area="Admin" asp-controller="Menu" asp-action="Index" class="txt19" target="_blank">ADMİN PANELİ</a>
+				</li>
+				<li >
+					<form class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+						<button type="submit" class="nav-link btn btn-link text-white">Çıkış</button>
+					</form>
+				</li>
+			}
+		     @if(!User.Identity.IsAuthenticated)
+			{
+				<li class="t-center m-b-13">
+					<a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Üye ol</a>
+				</li>
+				<li class="t-center m-b-13">
+					<a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Giriş yap</a>
+				</li>
+			}
+			
+		</ul>
+
+		<!-- - -->
+		<div class="gallery-sidebar t-center p-l-60 p-r-60 p-b-40">
+			<!-- - -->
+			<h4 class="txt20 m-b-33">
+				Gallery
+			</h4>
+			Sidebar galeri
+			@await Component.InvokeAsync("SideBarGaleri")
+			<!-- Gallery -->
+			
+		</div>
+	</aside>
+
+	<!-- Slide1 -->
+	@RenderBody()
+
+
+
+	<!-- Footer -->
+	<footer class="bg1">
+		<div class="container p-t-40 p-b-70">
+			<div class="row">
+				<div class="col-sm-6 col-md-3 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-33">
+						iletişim
+					</h4>
+
+				@await Component.InvokeAsync("İletisim")
+			
+					<!-- - -->
+					@* <h4 class="txt13 m-b-32">
+						Opening Times
+					</h4>
+
+					<ul>
+						<li class="txt14">
+							09:30 AM – 11:00 PM
+						</li>
+
+						<li class="txt14">
+							Every Day
+						</li>
+					</ul> *@
+				</div>
+
+				<div class="col-sm-6 col-md-3 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-33">
+						Çalışma Saatleri
+					</h4>
+					
+
+					<ul>
+						<li class="txt14">
+							Hergün
+						</li>
+
+						<li class="txt14">
+						
+							09:30 – 24:00 
+						</li>
+					</ul>
+					@* <div class="m-b-25">
+						<span class="fs-13 color2 m-r-5">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</span>
+						<a href="#" class="txt15">
+							
+						</a>
+
+						<p class="txt14 m-b-18">
+							Activello is a good option. It has a slider built into that displays the featured image in the slider.
+							<a href="#" class="txt15">
+								https://buff.ly/2zaSfAQ
+							</a>
+						</p>
+
+						<span class="txt16">
+							21 Dec 2017
+						</span>
+					</div>
+					<div>
+						<span class="fs-13 color2 m-r-5">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</span>
+						<a href="#" class="txt15">
+							
+						</a>
+
+						<p class="txt14 m-b-18">
+							Activello is a good option. It has a slider built into that displays
+							<a href="#" class="txt15">
+								https://buff.ly/2zaSfAQ
+							</a>
+						</p>
+
+						<span class="txt16">
+							21 Dec 2017
+						</span>
+					</div> *@
+				</div>
+
+				<div class="col-sm-6 col-md-3 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-38">
+						Sosyal Medya
+					</h4>
+					<div class="p-t-5 p-b-5">
+						<a href="https://www.linkedin.com/in/arman-%C3%BCst%C3%BC-8063b2140/" class="fs-15 c-white"><i class="fa fa-linkedin " aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/kodluyoruz/" class="fs-15 c-white"><i class="fa fa-instagram m-l-18" aria-hidden="true"></i></a>
+						<a href="https://www.facebook.com/arman.ustu" class="fs-15 c-white"><i class="fa fa-facebook m-l-18" aria-hidden="true"></i></a>
+						<a href="#" class="fs-15 c-white"><i class="fa fa-twitter m-l-18" aria-hidden="true"></i></a>
+						<a asp-area="Identity" asp-page="/Account/Login" target="_blank" clas="text-white">Kafe Hanzade</a>
+					</div>
+					<!-- Gallery footer -->
+				@* 	<div class="wrap-gallery-footer flex-w">
+						<a class="item-gallery-footer wrap-pic-w" href="~/site/images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
+							<img src="~/site/images/photo-gallery-thumb-01.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="~/site/images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
+							<img src="~/site/images/photo-gallery-thumb-02.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="~/site/images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
+							<img src="~/site/images/photo-gallery-thumb-03.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="~/site/images/photo-gallery-04.jpg" data-lightbox="gallery-footer">
+							<img src="~/site/images/photo-gallery-thumb-04.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="~/site/images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
+							<img src="~/site/images/photo-gallery-thumb-05.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="~/site/images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
+							<img src="~/site/images/photo-gallery-thumb-06.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="~/site/images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
+							<img src="~/site/images/photo-gallery-thumb-07.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="~/site/images/photo-gallery-08.jpg" data-lightbox="gallery-footer">
+							<img src="~/site/images/photo-gallery-thumb-08.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="~/site/images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
+							<img src="~/site/images/photo-gallery-thumb-09.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="~/site/images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
+							<img src="~/site/images/photo-gallery-thumb-10.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="~/site/images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
+							<img src="~/site/images/photo-gallery-thumb-11.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="~/site/images/photo-gallery-12.jpg" data-lightbox="gallery-footer">
+							<img src="~/site/images/photo-gallery-thumb-12.jpg" alt="GALLERY">
+						</a>
+					</div> *@
+
+				</div>
+
+				<div class="col-sm-6 col-md-3 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-33">
+						Galeri
+					</h4>
+
+					 @await Component.InvokeAsync("Galeri")
+					@* <div class="m-b-25">
+					<span class="fs-13 color2 m-r-5">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+					</span>
+					<a href="#" class="txt15">
+
+					</a>
+
+					<p class="txt14 m-b-18">
+					Activello is a good option. It has a slider built into that displays the featured image in the slider.
+					<a href="#" class="txt15">
+					https://buff.ly/2zaSfAQ
+					</a>
+					</p>
+
+					<span class="txt16">
+					21 Dec 2017
+					</span>
+					</div>
+					<div>
+					<span class="fs-13 color2 m-r-5">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+					</span>
+					<a href="#" class="txt15">
+
+					</a>
+
+					<p class="txt14 m-b-18">
+					Activello is a good option. It has a slider built into that displays
+					<a href="#" class="txt15">
+					https://buff.ly/2zaSfAQ
+					</a>
+					</p>
+
+					<span class="txt16">
+					21 Dec 2017
+					</span>
+					</div> *@
+				</div>
+
+			</div>
+		</div>
+
+		<div class="end-footer bg2">
+			<div class="container">
+				<div class="flex-sb-m flex-w p-t-22 p-b-22">
+					<div class="p-t-5 p-b-5">
+						
+						<a href="https://www.linkedin.com/in/arman-%C3%BCst%C3%BC-8063b2140/" class="fs-15 c-white"><i class="fa fa-linkedin " aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/kodluyoruz/" class="fs-15 c-white"><i class="fa fa-instagram m-l-18" aria-hidden="true"></i></a>
+						<a href="https://www.facebook.com/arman.ustu" class="fs-15 c-white"><i class="fa fa-facebook m-l-18" aria-hidden="true"></i></a>
+						<a href="#" class="fs-15 c-white"><i class="fa fa-twitter m-l-18" aria-hidden="true"></i></a>
+						<a asp-area="Identity" asp-page="/Account/Login" target="_blank" clas="text-white">Kafe Hanzade</a>
+					</div>
+
+					<div class="txt17 p-r-20  p-b-5">
+						<a asp-area="Identity" asp-page="/Account/Login" target="_blank" clas="text-white">Kafe Hanzade</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top bg0-hov" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+	<!-- Container Selection1 -->
+	<div id="dropDownSelect1"></div>
+
+	<!-- Modal Video 01-->
+	<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
+
+		<div class="modal-dialog" role="document" data-dismiss="modal">
+			<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
+
+			<div class="wrap-video-mo-01">
+				<div class="w-full wrap-pic-w op-0-0"><img src="~/site/images/icons/video-16-9.jpg" alt="IMG"></div>
+				<div class="video-mo-01">
+					<iframe src="https://www.youtube.com/embed/5k1hSu2gdKE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--===============================================================================================-->
+	<script type="text/javascript" src="~/site/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script type="text/javascript" src="~/site/vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script type="text/javascript" src="~/site/vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="~/site/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script type="text/javascript" src="~/site/vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script type="text/javascript" src="~/site/vendor/daterangepicker/moment.min.js"></script>
+	<script type="text/javascript" src="~/site/vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script type="text/javascript" src="~/site/vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="~/site/js/slick-custom.js"></script>
+	<!--===============================================================================================-->
+	<script type="text/javascript" src="~/site/vendor/parallax100/parallax100.js"></script>
+	<script type="text/javascript">
+		$('.parallax100').parallax100();
+	</script>
+	<!--===============================================================================================-->
+	<script type="text/javascript" src="~/site/vendor/countdowntime/countdowntime.js"></script>
+	<!--===============================================================================================-->
+	<script type="text/javascript" src="~/site/vendor/lightbox2/js/lightbox.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="~/site/js/main.js"></script>
+	@await RenderSectionAsync("Scripts",required:false)
+	@await Component.InvokeAsync("NToastNotify")
+
+</body>
+</html>
